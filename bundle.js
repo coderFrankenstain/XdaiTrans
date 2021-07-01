@@ -3563,6 +3563,7 @@ const wjCurrentAddress = document.querySelector('.wjCurrentAddress');
 const wjCurrentChain = document.querySelector('.wjCurrentChain');
 
 const ether = new BN('de0b6b3a7640000', 16);
+const gasPrice = new BN('4a817c800',16)
 
 let accounts = [];
 // let addresses = [];
@@ -3618,7 +3619,7 @@ async  function transaction (fromCount,toCount,value) {
                     from: fromCount,
                     to: toCount,
                     value: value.toString(16),
-                    gasPrice: '0x09184e72a000',
+                    gasPrice: gasPrice.toString(16),
                     gas: '0x5208',
                 },
             ],
