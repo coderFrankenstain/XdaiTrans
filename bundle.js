@@ -3577,11 +3577,52 @@ function checkMetaMask(){
     if (typeof window.ethereum !== 'undefined') {
         //已经安装钱包
         console.log('MetaMask is installed!');
+
+        if (ethereum.isConnected){
+            console.log("已经连接")
+            checkXdaiNet();
+        }
+        else{
+            console.log("还未连接")
+            alert('请先连接钱包')
+
+        }
     }
     else {
         alert('请先安装小狐狸钱包');
     }
 }
+
+//检测当前是否为Xdai网络
+async function checkXdaiNet(){
+    var netId = await ethereum.request({method:'net_version'});
+    console.log(netId)
+    if (netId == '100'){
+
+    }
+    else{
+       alert('请切换到Xdai网络');
+       addXdaiNew();
+    }
+}
+
+//添加到Xdai网络
+function addXdaiNew(){
+    ethereum.request({method:'wallet_addEthereumChain',params:[
+            {
+                chainId:"100",
+                chainName:"Xdai",
+                nativeCurrency:{
+                    name:"Xdai",
+                    symbol:"Xdai",
+                    decimals:18
+                },
+                rpcUrls:"https://rpc.xdaichain.com/",
+                blockExplorerUrls:"https://blockscout.com/poa/xdai"
+            }
+        ]},).catch((error) => console.error);
+}
+
 
 //发送交易点击监听事件
 wjEthSendButton.addEventListener('click', () => {
@@ -3606,7 +3647,6 @@ wjEthEnableButton.addEventListener('click', () => {
 async function getAccount() {
     accounts = await ethereum.request({ method: 'eth_requestAccounts' });
     wjCurrentAddress.innerHTML = accounts[0];
-    console.log('coderjun'+accounts);
 }
 
 //发送交易消息方法
@@ -3643,6 +3683,11 @@ ethereum.on('chainChanged', function (chainString) {
     var chainId = new BN(str,16)
     wjCurrentChain.innerHTML = chainId.toString(10);
     // console.log(chainId.toString(10));
+});
+
+ethereum.on('connect',function (accounts) {
+    wjCurrentChain.innerHTML = accounts['chainId'];
+    console.log("connect"+accounts);
 });
 },{"bn.js":1}],3:[function(require,module,exports){
 
