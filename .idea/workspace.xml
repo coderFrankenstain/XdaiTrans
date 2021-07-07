@@ -4,8 +4,10 @@
     <list default="true" id="20da2713-6657-459d-957d-14953df1fc7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bn.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bn.js/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendEth.html" beforeDir="false" afterPath="$PROJECT_DIR$/sendEth.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sendEth.js" beforeDir="false" afterPath="$PROJECT_DIR$/sendEth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,6 +47,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/homePage" />
       <recent name="$PROJECT_DIR$/ethWindowProvider" />
       <recent name="$PROJECT_DIR$/sendEth" />
       <recent name="$PROJECT_DIR$/node_modules" />
@@ -62,6 +65,11 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -74,7 +82,11 @@
       <updated>1625039137162</updated>
       <workItem from="1625039141282" duration="12878000" />
       <workItem from="1625106061767" duration="16744000" />
-      <workItem from="1625189360422" duration="11436000" />
+      <workItem from="1625189360422" duration="11845000" />
+      <workItem from="1625448476050" duration="4813000" />
+      <workItem from="1625465804689" duration="136000" />
+      <workItem from="1625468239067" duration="2362000" />
+      <workItem from="1625471672240" duration="3001000" />
     </task>
     <servers />
   </component>

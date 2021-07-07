@@ -13,6 +13,7 @@
     "@metamask/detect-provider": "^1.2.0",
     "bn.js": "^5.2.0",
     "bootstrap": "^3.4.1",
+    "http-server": "^0.12.3",
     "jq": "^1.7.2"
   }
 }
